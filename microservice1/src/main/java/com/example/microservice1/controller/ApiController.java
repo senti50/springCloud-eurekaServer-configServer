@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApiController {
 
-    @Value("${message}")
+    @Value("${message: we are without config server}")
     private String message;
 
     @GetMapping("/hello")
